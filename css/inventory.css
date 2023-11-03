@@ -1,0 +1,39 @@
+
+
+body{
+    background-image: url('../img/pic\ in5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.container {
+   
+    max-width: 800px;
+    text-align: center;
+    padding: 40px;
+}
+p{
+    color: #f0f0fc;
+    font-size: 1.5rem ;
+}
+
+
+li {
+    margin-bottom: 20px;
+}
+
+a { 
+    text-decoration:none ;
+    font-size: 1.5rem;
+    color: #b197f7;
+    padding: 5px 20px;
+    border: 2px solid #d16969;
+    border-radius: 3.5px;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    background-color: #333;
+    color: #d6a2a2;
+}

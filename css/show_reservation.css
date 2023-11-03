@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    color:rgb(2, 1, 10);
+    margin: 5;
+    padding: 5;
+    height: 100vh;
+    background-image: url('../img/pic338.jpg ');
+    background-size: cover;
+    background-repeat: no-repeat
+    
+}
+
+h1 {
+    font-size: 36px;
+    margin-left: 25%;
+    margin-top: 20px;
+    color: rgb(242, 246, 249);
+}
+
+table {
+    margin: 30px;
+    border-collapse: collapse;
+    width: 10%;
+}
+
+table,
+th,
+td {
+    border: 2px solid rgb(219, 84, 6);
+}
+
+th,
+td {
+    padding: 7px;
+    text-align: lef
+}
+
+th {
+    background-color: #f8f9f5e9;
+    color: rgb(164, 43, 9);
+}
+
+tr:nth-child(even) {
+    background-color: #fcd48f;
+}
+
+tr:nth-child(odd) {
+    background-color: hsl(57, 100%, 85%);
+}
+
+
+tr:hover {
+    background-color: #54e97e8e;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+ul {
+    list-style: circle;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+li {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    color:cornsilk
+}
+
+
+input[type="text"],
+input[type="number"],
+select {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px rgba(252, 13, 13, 0.688);
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3fc8fe;
+    color: rgb(6, 3, 3);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #f3f8f3;
+}
+a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #e7e4f0;
+    padding: 5px 20px;
+    border: 2px solid #b35cea;
+    border-radius: 3.5px;
+    transition: all 0.2s ease;
+}
