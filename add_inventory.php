@@ -16,6 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     mysqli_stmt_execute($stmt_check);
     $result = mysqli_stmt_get_result($stmt_check);
 
+    // test
+
     if (mysqli_num_rows($result) > 0) {
         // If the item already exists, update the quantity and price
         $row = mysqli_fetch_assoc($result);
