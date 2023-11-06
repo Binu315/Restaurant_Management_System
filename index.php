@@ -6,13 +6,13 @@
 </head>
 <body>
     <div id="form">
-        <h1>Login Form</h1>
+        <h2>Login Form</h1>
             <form name="form" method="POST">
                 <label>Username: </label>
-                <input type="text" id="user" name="user"><br><br>
-                <label>password:</label>
-                <input type="password" id="pass" name="pass"></br></br>
-                <input type="submit" id="btn" value="Login" name="submit"/>
+                <input class="large-input" type="text" id="user" name="user"><br><br>
+                <label>Password:</label>
+                <input class="large-input" type="Password" id="pass" name="pass"></br></br>
+                <input class="large-btn" type="submit" id="btn" value="Login" name="submit"/>
          </form>
     </div>
 </body>

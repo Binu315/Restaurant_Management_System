@@ -9,36 +9,6 @@
         <?php
         require_once('db_connection.php');
 
-        if(isset($_POST['submit'])){
-            $order_summary = "<h2>Order Summary</h2>";
-            
-            $order_total = 0;
-
-            foreach ($_POST as $key => $value) {
-                if($value != "" && $key != "submit"){
-                    $item_id = mysqli_real_escape_string($conn, $key);
-                    $quantity = mysqli_real_escape_string($conn, $value);
-
-                    $sql = "SELECT price, item_name FROM menu WHERE id = '$item_id'";
-                    $result = mysqli_query($conn, $sql);
-
-                    if(mysqli_num_rows($result) > 0){
-                        $row = mysqli_fetch_assoc($result);
-                        $price = $row['price'];
-                        $item_name = $row['item_name'];
-                        $subtotal = $quantity * $price;
-                        $order_total += $subtotal;
-                        $order_summary .= "<p>$item_name x $quantity - $subtotal</p>";
-                    } else {
-                        $order_summary .= "<p>Invalid item ID: $item_id</p>";
-                    }
-                }
-            }
-
-            $order_summary .= "<h3>Total: $order_total</h3>";
-            echo $order_summary;
-            echo "<div id='order-summary' style='display:none;'>$order_summary</div>";
-        }
 
         $sql = "SELECT id, item_name, price, category FROM menu";
         $result = mysqli_query($conn, $sql);
@@ -86,6 +56,38 @@
             echo "<button onclick='printBill()'>Print Bill</button>";
         } else {
             echo "No menu items found.";
+        }
+
+        
+        if(isset($_POST['submit'])){
+            $order_summary = "<h2>Order Summary</h2>";
+            
+            $order_total = 0;
+
+            foreach ($_POST as $key => $value) {
+                if($value != "" && $key != "submit"){
+                    $item_id = mysqli_real_escape_string($conn, $key);
+                    $quantity = mysqli_real_escape_string($conn, $value);
+
+                    $sql = "SELECT price, item_name FROM menu WHERE id = '$item_id'";
+                    $result = mysqli_query($conn, $sql);
+
+                    if(mysqli_num_rows($result) > 0){
+                        $row = mysqli_fetch_assoc($result);
+                        $price = $row['price'];
+                        $item_name = $row['item_name'];
+                        $subtotal = $quantity * $price;
+                        $order_total += $subtotal;
+                        $order_summary .= "<p>$item_name x $quantity - $subtotal</p>";
+                    } else {
+                        $order_summary .= "<p>Invalid item ID: $item_id</p>";
+                    }
+                }
+            }
+
+            $order_summary .= "<h3>Total: $order_total</h3>";
+            echo $order_summary;
+            echo "<div id='order-summary' style='display:none;'>$order_summary</div>";
         }
 
         mysqli_close($conn);

@@ -44,10 +44,6 @@
         // Close the database connection
         mysqli_close($conn);
     ?>
-    <ul>
-        <li><a href="add_menu.php">Add items to Menu</a></li>
-        <li><a href="Delete_menu.php">Delete items to Menu</a></li>
-
-    </ul>
+   
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html>
 <head> 
     <title>Inventory List</title>
-    <link rel="stylesheet" type="text/css" href="./css/show_reservation.css">
+    <link rel="stylesheet" type="text/css" href="./css/show_inventory.css">
 </head>
 <body>
     <?php

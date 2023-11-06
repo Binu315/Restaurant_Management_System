@@ -1,7 +1,7 @@
 
 
 body{
-    background-image: url('../img/pic\ in5.jpg');
+    background-image: url('../img/inventory.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -12,24 +12,29 @@ body{
     max-width: 800px;
     text-align: center;
     padding: 40px;
+    margin-left: 600px;
+    margin-top: 200px;
 }
-p{
-    color: #f0f0fc;
-    font-size: 1.5rem ;
+h2{
+    color: rgb(5, 5, 14);
+    font-size: 2.5rem ;
 }
 
 
 li {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 a { 
     text-decoration:none ;
-    font-size: 1.5rem;
-    color: #b197f7;
+    font-size: 2rem;
+    color: rgb(9, 5, 20);
     padding: 5px 20px;
-    border: 2px solid #d16969;
-    border-radius: 3.5px;
+    background-color: #d6a2a2;
+    border: 2px solid #0e0d0d;
+    border-radius: 8px;
+    margin-top: 5px;
+    font-weight: 700;
     transition: all 0.2s ease;
 }
 

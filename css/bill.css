@@ -3,16 +3,21 @@ body {
     color: aliceblue;
     margin: 5;
     padding: 5;
-    height: 10vh;
-    background-image: url('../img/pic19.jpg ');
+    height: max-content;
+    background-image: url('../img/bill.jpg');
     background-size: cover;
-    background-repeat: repeat
+    background-repeat:no-repeat;
+    
+
 }
 
 h2 {
     font-size: 36px;
-    margin-top: 50px;
     color: rgb(242, 246, 249);
+    
+}
+h3{
+    font-size: 28px;
 }
 P{
     font-size: 20px;
@@ -24,7 +29,10 @@ h1 {
     font-size: 36px;
     text-align: center;
     margin-top: 50px;
-    color: rgb(242, 246, 249);
+    color: rgb(12, 14, 15);
+    background-color: aliceblue;
+    width: 200px;
+    margin-left: 650px;
 }
 
 table {
@@ -84,13 +92,29 @@ select {
 input[type="submit"] {
     padding: 10px 20px;
     font-size: 18px;
-    background-color: #0a8e2d;
-    color: rgb(14, 13, 13);
+    background: linear-gradient(to bottom, rgb(158, 144, 238), #61ddee);
+    color: black;
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: 600;
 }
-
 input[type="submit"]:hover {
-    background-color: #3988e9;
+    background: linear-gradient(to bottom, rgb(90, 223, 221), #1d23cd);
+}
+button{
+    color: #c6c5ca;
+    background: linear-gradient(to bottom, rgb(168, 93, 86), #5d539f);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    font-weight: 600;
+}
+button:hover{
+    background: linear-gradient(to top, rgb(74, 56, 176), #e34040);
 }

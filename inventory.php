@@ -7,7 +7,7 @@
 <body>
 <div class="container">
    
-    <p>Please select an option below to get started:</p>
+    <h2>Please select an option below to get started</h2>
     <ul>
        
         <li><a href="Show_inventory.php">Show inventory</a></li>

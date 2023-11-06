@@ -14,22 +14,25 @@ body{
 }
 p{
     color: #f0f0fc;
-    font-size: 1.5rem ;
+    font-weight: 700;
+    font-size: 2.3rem ;
 }
 
 
 li {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 a { 
     text-decoration:none ;
-    font-size: 1.5rem;
-    color: #b197f7;
+    font-size: 2rem;
+    color: #c8c6ce;
+    background-color: #dfdde41f;
     padding: 5px 20px;
     border: 2px solid #d16969;
     border-radius: 3.5px;
     transition: all 0.2s ease;
+   
 }
 
 a:hover {

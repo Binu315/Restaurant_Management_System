@@ -2,14 +2,13 @@ body {
     background-color: #f5f6f6;
     background-image: url('../img/pic29.jpg ');
     background-repeat: no-repeat;
-    
     font-family: Arial, sans-serif;
 }
 
 h1 {
     color: #333;
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 150px;
 }
 
 form {
